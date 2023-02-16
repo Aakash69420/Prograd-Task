@@ -1,0 +1,29 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5%;
+}
+
+#age {
+  width: 20%;
+  margin-left: 40%;
+}
+
+#age input, span, button {
+  display: block;
+  padding: 5%;
+  margin: 5%;
+}
+
+#result {
+  margin-left: 40%;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: lightgreen;
+  }
+}
