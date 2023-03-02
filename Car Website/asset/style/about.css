@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap');
+
+body {
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color:hsl(219, 4%, 7%);
+}
+header {
+ background: url(subpage\ images/about.png);
+ color: #fff;
+ padding: 20px;
+ text-align: center;
+}
+h1 {
+ margin: 0;
+ font-size: 36px;
+}
+p {
+ font-size: 18px;
+ line-height: 1.5;
+ padding: 20px;
+ color: aliceblue;
+}

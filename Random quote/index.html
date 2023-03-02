@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Quote Generator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      #quote {
+        font-size: 24px;
+        margin-top: 50px;
+      }
+      #new-quote {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        border-radius: 10px;
+      }
+      #new-quote:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="quote"></div>
+      <button id="new-quote">New Quote</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

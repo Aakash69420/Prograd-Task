@@ -1,0 +1,21 @@
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myContainercolor: blue;
+$myParagraphcolor: green;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+p{
+ color: $myParagraphcolor;
+}
+
+#container {
+  width: $myWidth;
+  color: $myContainercolor;
+}                 

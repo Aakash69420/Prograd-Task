@@ -1,0 +1,39 @@
+.traffic-signal {
+ margin-top: 16%;
+ margin-left: 30%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 600px;
+ height: 250px;
+ background-color: black;
+ border-radius: 20px;
+ box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.traffic-light {
+ width: 175px;
+ height: 175px;
+ border-radius: 50%;
+ margin: 5px;
+ box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.5);
+ cursor: pointer;
+ transition: background-color 0.5s ease;
+}
+
+.red {
+ background-color: #ff4d4d;
+}
+
+.yellow {
+ background-color: #ffc107;
+}
+
+.green {
+ background-color: #4caf50;
+}
+
+.active {
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+ transform: scale(1.1);
+}

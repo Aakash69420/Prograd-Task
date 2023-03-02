@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Voting Eligibility</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			padding: 20px;
+		}
+		.card {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			margin-bottom: 20px;
+			transition: box-shadow 0.3s ease;
+		}
+		.card:hover {
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+		}
+		h1 {
+			margin-bottom: 20px;
+		}
+		form {
+			margin-bottom: 20px;
+		}
+		label, input {
+			display: block;
+			margin-bottom: 10px;
+		}
+		button {
+			padding: 10px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+		p {
+			margin-top: 20px;
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<h1>Check Voting Eligibility</h1>
+		<form>
+			<label for="age">Enter Your Age:</label>
+			<input type="number" id="age" name="age" required><br>
+			<button type="button" onclick="checkEligibility()" onmouseover="this.style.backgroundColor='#3e8e41'" onmouseout="this.style.backgroundColor='#4CAF50'">Check Eligibility</button>
+		</form>
+		<p id="result"></p>
+	</div>
+	<script>
+		function checkEligibility() {
+			// get input value
+			var age = Number(document.getElementById("age").value);
+
+			// check eligibility using conditional operator
+			var message = age >= 18 ? "You are eligible to vote." : "You are not eligible to vote. You need to wait " + (18 - age) + " year(s) to be eligible.";
+
+			// display result
+			var result = document.getElementById("result");
+			result.innerHTML = message;
+		}
+	</script>
+</body>
+</html>
